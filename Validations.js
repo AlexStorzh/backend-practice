@@ -7,7 +7,7 @@ export const loginValidation = [
 export const registerValidation = [
     body('email', "Invalid email").isEmail(),
     body('password', "Invalid password").isLength({ min: 5 }),
-    body('nickName', "Invalid Nickname").isLength({ min: 3 }),
+    body('fullName', "Invalid Full Name").isLength({ min: 3 }),
     body('avatarUrl', "Invalid Avatar").optional().isURL(),
 ]
 export const postCreateValidation = [
